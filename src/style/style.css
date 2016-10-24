@@ -1,0 +1,50 @@
+html, body {
+  display:  flex;
+  width: 100%;
+  height: 100%;
+  margin : 0;
+  padding : 0;
+}
+
+
+
+#root, .App {
+  display:  flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  background-image: url("http://image.shutterstock.com/z/stock-photo-mathematical-background-67133872.jpg")
+}
+
+.App-header {
+  color: black;
+  margin-left: 20px;
+  height: 60px;
+  font-size: 60px;
+}
+
+
+
+.question {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.problemStr {
+  font-size: 40px;
+}
+
+.solution {
+  margin-top: 40px;
+  font-size : 30px;
+  text-align: center;
+  border : 0;
+}
+
+.timer {
+  text-align: center;
+  font-size: 100px;
+}

@@ -8,6 +8,7 @@
   "dependencies": {
     "mathjs": "^3.6.0",
     "react": "^15.3.2",
+    "react-countdown-clock": "^1.0.9",
     "react-dom": "^15.3.2"
   },
   "scripts": {
