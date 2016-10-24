@@ -18,6 +18,8 @@ html, body {
 }
 
 .App-header {
+  display: flex;
+  justify-content: space-between;
   color: black;
   margin-left: 20px;
   height: 60px;
@@ -47,4 +49,21 @@ html, body {
 .timer {
   text-align: center;
   font-size: 100px;
+}
+
+.gameOver {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.restartButton {
+  color : white;
+  background-color: green;
+  text-align: center;
+  width: 50%;
 }

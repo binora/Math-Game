@@ -6,7 +6,7 @@ class Timer extends Component {
     console.log('constructor');
     super(props);
     this.state = {
-      secondsRemaining: 0
+      secondsRemaining: this.props.secondsRemaining
     };
   }
 
@@ -17,7 +17,7 @@ class Timer extends Component {
       this.componentDidMount()
       return;
     }
-    this.props.informParent();
+    this.props.updateSecondsRemaining();
   }
 
   componentDidMount() {
@@ -30,6 +30,9 @@ class Timer extends Component {
   }
 
   render() {
+    if (this.props.isGameOver) {
+      return null;
+    }
     return (
       <div className='timer'>
         {this.props.secondsRemaining}

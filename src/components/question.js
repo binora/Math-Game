@@ -3,6 +3,9 @@ import React from 'react';
 
 
 const question = (props) => {
+    if (props.isGameOver) {
+      return null;
+    }
     return (
         <div className='question'>
          <div className='problemStr'> {props.problemStr} </div>
